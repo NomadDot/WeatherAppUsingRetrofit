@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/main_theme">
+
+    <TextView
+        android:id="@+id/txtCityNotFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Not found"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txtCountry"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="City"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imgWeather"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Country"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imgWeather"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+    <TextView
+        android:id="@+id/txtCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+
+        android:text="0"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:textSize="25sp"
+        android:layout_toRightOf="@id/txtCelsius"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
+    <ImageView
+        android:id="@+id/imgWeather"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/main_theme"/>
+
+
+</RelativeLayout>

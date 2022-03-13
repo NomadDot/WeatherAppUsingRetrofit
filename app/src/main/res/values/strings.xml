@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather app</string>
+
+    <!--  Wheather API  -->
+    <string name="wheatherAPIKey">7d92df1e3e90422e96c121314221203</string>
+
+    <!--  Menu  -->
+    <string name="search">Search</string>
+</resources>
